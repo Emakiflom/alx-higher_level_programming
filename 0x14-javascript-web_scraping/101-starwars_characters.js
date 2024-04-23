@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'; // Temporarily disable SSL certificate validation
+
 const request = require('request');
 
 const movieId = process.argv[2];
